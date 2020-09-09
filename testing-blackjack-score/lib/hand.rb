@@ -2,13 +2,26 @@ require_relative 'deck'
 
 class Hand
   def initialize(cards)
-    # Your def initialize is taking in an array of cards as an argument
-
     @cards = cards
   end
 
-  def calculate_hand
-    # Your code here after writing tests
-    # Think about what this method needs to do
+  def total_value
+    total = 0
+
+    @cards.each do |card|
+      total += card.value
+    end
+
+    return total 
+  end
+
+  def card_summary
+    output_message = ""
+
+    @cards.each do |card|
+      output_message += "#{card.print_card} "
+    end
+
+    return output_message
   end
 end

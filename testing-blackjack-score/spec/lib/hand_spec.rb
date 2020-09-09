@@ -15,9 +15,9 @@ describe Hand do
       expect(1).to eq(1)
     end
 
-    it "fails" do
-      expect(false).to eq true
-    end
+    # it "fails" do
+    #   expect(false).to eq true
+    # end
 
     # Add your remaining tests here.
 
