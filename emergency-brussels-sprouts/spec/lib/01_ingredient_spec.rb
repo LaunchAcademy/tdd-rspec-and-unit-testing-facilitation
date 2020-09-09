@@ -6,12 +6,15 @@ describe Ingredient do
 
   describe ".new" do
     it "takes a name and weight as arguments" do
+      ingredient.name = "buttered ice cream"
       expect(ingredient).to be_a(Ingredient)
     end
   end
 
   describe "#name" do
     it "has a reader for name" do
+
+      ingredient.name == "Cheesy Poof"
       expect(ingredient.name).to eq("Cheesy Poof")
     end
 

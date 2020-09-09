@@ -7,6 +7,9 @@ class Ingredient
   end
 
   def self.create_from_grams(name, grams)
+    binding.pry
     Ingredient.new(name, grams / 1000)
   end
+
+  Ingredient.create_from_grams
 end
