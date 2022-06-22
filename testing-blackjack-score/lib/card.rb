@@ -1,13 +1,18 @@
 class Card 
-  attr_reader :rank
+
+  attr_reader :rank, :suit
 
   def initialize(rank, suit)
-    @rank = rank 
+    @rank = rank
     @suit = suit
   end
 
-  def ace_card? 
-    @rank == "A"
+  def face_card? 
+    if @rank == "A" || @rank == "K" || @rank == "Q" || @rank == "J"
+      return true
+    end
+
+    return false
   end
 
 end
@@ -18,16 +23,3 @@ end
 
 
 
-
-
-
-
-
-
-
-# def value 
-# end
-
-# def print_card
-  # return "#{suit} #{rank}"
-# end
