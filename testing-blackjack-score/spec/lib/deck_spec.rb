@@ -1,4 +1,4 @@
-require "spec_helper"
+require "spec_helper.rb"
 
 describe Deck do
   let(:deck) { Deck.new } # Creates a variable that can be used for tests
